@@ -76,6 +76,10 @@ class Dog{
 			top: top + 'px'
 		}, time, 'linear',this.movementComplete.bind(this, movementCompleteCallback))
 	}
+
+	get currentPosition(){
+		return this.domElement.position();
+	}
 	/*
 		@purpose: pop up a bubble over the dog
 		@params: 
